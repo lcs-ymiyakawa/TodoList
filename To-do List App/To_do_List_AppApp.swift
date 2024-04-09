@@ -11,7 +11,7 @@ import SwiftUI
 struct To_do_List_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandingView()
         }
     }
 }
