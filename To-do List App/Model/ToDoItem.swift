@@ -18,7 +18,7 @@ let firstItem = ToDoItem(title: "Study for Chemistry quiz", done: false)
 
 let secondItem = ToDoItem(title: "Finish Computer Science assignment", done: true)
 
-let thirdItem = ToDoItem(title: "Go for a run around campus", done: true)
+let thirdItem = ToDoItem(title: "Go for a run around campus", done: false)
 
 let exampleItems = [
     
