@@ -5,6 +5,7 @@
 //  Created by 宮川義之助 on 2024/04/09.
 //
 
+import SwiftData
 import SwiftUI
 
 struct LandingView: View    {
@@ -15,6 +16,10 @@ struct LandingView: View    {
     
     // The search text
     @State var searchText = ""
+    
+    // Access the model context
+    
+    @Environment(\.modelContext) var modelContext
     
     // The list of to-do items
     @State var todos: [ToDoItem] = exampleItems
