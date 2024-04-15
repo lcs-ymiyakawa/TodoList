@@ -27,10 +27,14 @@ struct ItemView: View {
     }
 }
 
-//#Preview {
-//    List {
-//        ItemView(currentItem: Binding.constant(firstItem))
-//        ItemView(currentItem: Binding.constant(secondItem))
-//        ItemView(currentItem: Binding.constant(thirdItem))
-//    }
-//}
+#Preview {
+    
+    let container = ToDoItem.preview
+    
+    return List {
+        ItemView(currentItem: ToDoItem.someItem)
+        ItemView(currentItem: ToDoItem.anotherItem)
+    }
+    .modelContainer(container)
+    
+}
